@@ -122,10 +122,16 @@ const courses = [
   },
 ];
 
+
+
+
+// CODE STARTS HERE
+
+
+
 export default function CourseGrid() {
   return (
     <>
-      {/* Recommended Programs */}
       <div className="bg-gradient-to-br from-red-200 via-red-100 to-white px-6 py-10">
         <div className="text-center mb-10">
           <h1 className="text-4xl font-bold text-gray-800">
@@ -134,44 +140,46 @@ export default function CourseGrid() {
               recommended programs
               <span className="block h-[3px] w-28 bg-red-400 mt-1 rounded-full mx-auto"></span>
             </span>
-          </h1>
+                  </h1>
+                  <div className="text-center mb-4">
+                  
           <p className="text-gray-700 mt-4 max-w-2xl mx-auto">
             Courses that are highly preferred by aspiring developers and IT
             professionals.
-          </p>
+                  </p>
+                  </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 mb-10">
           {recommended.map((rec, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-xl shadow-md hover:shadow-lg transition p-4 flex flex-col justify-between"
+              className="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition p-6 flex flex-col justify-between border border-red-100"
             >
               <img
                 src={rec.img}
                 alt={rec.title}
-                className="w-full h-40 object-contain mb-4"
+                className="w-full h-36 object-contain mb-4"
               />
-              <h3 className="text-xl font-semibold text-blue-800 mb-2">
+              <h3 className="text-xl font-bold text-blue-900 mb-2 text-center">
                 {rec.title}
               </h3>
-              <p className="text-sm text-gray-600 mb-3 leading-snug">
+              <p className="text-sm text-gray-600 mb-3 leading-snug text-center">
                 {rec.description}
               </p>
-              <ul className="text-sm text-gray-700 list-disc list-inside mb-3">
+              <ul className="text-sm text-gray-700 list-disc list-inside mb-3 pl-2">
                 {rec.points.map((point, i) => (
                   <li key={i}>{point}</li>
                 ))}
               </ul>
               <div className="flex justify-end">
-                <ArrowRight className="text-blue-700 hover:text-blue-900" />
+                <ArrowRight className="text-red-600 hover:text-red-800" />
               </div>
             </div>
           ))}
         </div>
       </div>
 
-      {/* Career-Ready IT Courses */}
       <div className="min-h-screen bg-gradient-to-tr from-green-50 via-emerald-100 to-white px-6 py-10">
         <div className="text-center mb-10">
           <h1 className="text-4xl font-bold text-gray-800">
@@ -191,7 +199,7 @@ export default function CourseGrid() {
           {courses.map((course, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-xl overflow-hidden shadow hover:shadow-md transition-shadow transform hover:-translate-y-1"
+              className="bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition transform hover:-translate-y-1 border border-emerald-100"
             >
               <img
                 src={course.img}

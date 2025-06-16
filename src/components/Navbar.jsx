@@ -30,10 +30,10 @@ function Navbar() {
 
       <nav style={styles}>
         <div style={{ display: "flex", alignItems: "center" }}>
-          {/* yaha par image tag laga lo  */}
-          <h4 className="logo-font" style={{ margin: 0, color: "#ffffff" }}>
+          <img src="assets/logo.png" alt="logo" height={70} width={150} />
+          {/* <h4 className="logo-font" style={{ margin: 0, color: "#ffffff" }}>
             Unisoft
-          </h4>
+          </h4> */}
         </div>
 
         <ul style={listStyle}>
