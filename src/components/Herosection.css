@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+
+.hero-container {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* position: relative;  */
+    /* overflow: hidden; */
+}
+
+.videos {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -50;
+}
+
+.text-container {
+    display: flex;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    color: white;
+    flex-direction: column;
+    padding-top: 25vh;
+    margin-left: 9vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.text-container h1 {
+    padding-top: 40px;
+    font-size: 3rem;
+    line-height: 1.2;
+    margin: 0.3rem 0;
+    font-weight: bold;
+}
+
+.btn-container {
+    padding-top: 50px;
+    position: absolute;
+    top: 55vh;
+    z-index: 10;
+}
+
+.btn-container .btn {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+
+    font-size: 1rem;
+    font-weight: bold;
+    width: 200px;
+
+    outline: none;
+    border: none;
+
+
+    padding: 20px;
+    margin: 30px;
+    cursor: pointer;
+    border-style: none;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.btn-container .btn:hover {
+    background-color: #f3f3f3;
+    outline: none;
+    border: none;
+}
+
+#btn1 {
+    background-color: hsla(0, 0%, 100%, 0.823);
+    color: rgba(150, 54, 54, 0.905);
+}
+
+#btn2 {
+    background-color: hsla(0, 0%, 100%, 0.823);
+    color: rgb(187, 108, 11)
+}
